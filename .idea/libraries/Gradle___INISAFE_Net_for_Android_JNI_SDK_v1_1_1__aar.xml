@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :INISAFE_Net_for_Android_JNI_SDK_v1.1.1:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ed0efebf93125e2b7c379e3cbf9fdd0/jetified-INISAFE_Net_for_Android_JNI_SDK_v1.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ed0efebf93125e2b7c379e3cbf9fdd0/jetified-INISAFE_Net_for_Android_JNI_SDK_v1.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ed0efebf93125e2b7c379e3cbf9fdd0/jetified-INISAFE_Net_for_Android_JNI_SDK_v1.1.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
