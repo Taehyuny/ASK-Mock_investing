@@ -7,6 +7,12 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b2e67e82eec318be23b088dffcf8dcf2/jetified-XingAPI_And_v2.0.8/jars/libs/WKKCrypto.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b2e67e82eec318be23b088dffcf8dcf2/jetified-XingAPI_And_v2.0.8/jars/libs/SignKorea-Android.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b2e67e82eec318be23b088dffcf8dcf2/jetified-XingAPI_And_v2.0.8/jars/libs/KofiaSDK_v1.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c7ae558d0c47941c26c3a7d9953bdba/jetified-XingAPI_And_v2.0.8/jars/libs/SignKorea-Android.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c7ae558d0c47941c26c3a7d9953bdba/jetified-XingAPI_And_v2.0.8/jars/libs/WKKCrypto.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c7ae558d0c47941c26c3a7d9953bdba/jetified-XingAPI_And_v2.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c7ae558d0c47941c26c3a7d9953bdba/jetified-XingAPI_And_v2.0.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c7ae558d0c47941c26c3a7d9953bdba/jetified-XingAPI_And_v2.0.8/jars/libs/KofiaSDK_v1.2.1.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c7ae558d0c47941c26c3a7d9953bdba/jetified-XingAPI_And_v2.0.8/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

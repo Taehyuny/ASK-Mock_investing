@@ -45,11 +45,11 @@ class MainView : AppCompatActivity() , ActivityCompat.OnRequestPermissionsResult
         Triple(R.id.navi_4,"주식호가",R.drawable.l_icon_01),
         //Triple(R.id.navi_5,"현물계좌주문체결",R.drawable.l_icon_01),
         Triple(R.id.navi_6,"주문",R.drawable.l_icon_01),
-        Triple(R.id.navi_7,"TR조회 테스트",R.drawable.l_icon_01),
-        Triple(R.id.navi_8,"관심종목 테스트",R.drawable.l_icon_01),
-        Triple(R.id.navi_9,"잔고조회",R.drawable.l_icon_01),
-        Triple(R.id.navi_10,"체결내역",R.drawable.l_icon_01),
-        Triple(R.id.navi_11,"종목검색",R.drawable.l_icon_01)
+        //Triple(R.id.navi_7,"TR조회 테스트",R.drawable.l_icon_01),
+        //Triple(R.id.navi_8,"관심종목 테스트",R.drawable.l_icon_01),
+        Triple(R.id.navi_9,"잔고조회",R.drawable.l_icon_01)
+        //Triple(R.id.navi_10,"체결내역",R.drawable.l_icon_01),
+        //Triple(R.id.navi_11,"종목검색",R.drawable.l_icon_01)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -85,17 +85,17 @@ class MainView : AppCompatActivity() , ActivityCompat.OnRequestPermissionsResult
         /* 하단뷰 버튼 초기화 */
         val lstid = listOf<Triple<Int,String,Int>>(
             Triple(R.id.navi_log,"로그인",R.drawable.ic_mock_login),
-            subviewlst.get(0),
-            subviewlst.get(1),
-            subviewlst.get(2),
-            subviewlst.get(3),
-            //subviewlst.get(4),
-            subviewlst.get(4),
-            subviewlst.get(5),
-            subviewlst.get(6),
-            subviewlst.get(7),
-            subviewlst.get(8),
-            subviewlst.get(9),
+            subviewlst.get(0), // 시간대별
+            subviewlst.get(1), // 기간주가
+            subviewlst.get(2), // 분별주가
+            subviewlst.get(3), // 주식호가
+            //subviewlst.get(4), // 현물계좌주문 ★
+            subviewlst.get(4),   // 주문
+            // subviewlst.get(5),   // TR조회   ★
+            // subviewlst.get(6),   // 관심종목 ★
+            subviewlst.get(5),   // 잔고조회
+            // subviewlst.get(8),   // 체결내역 ★
+            // subviewlst.get(9),   // 종목검색 ★
             Triple(R.id.navi_webview,"WebPage",R.drawable.l_icon_01)
         )
 
@@ -116,6 +116,7 @@ class MainView : AppCompatActivity() , ActivityCompat.OnRequestPermissionsResult
     // 퍼미션관련 콜백
     @RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
     override fun onRequestPermissionsResult(requestCode: Int, permission: Array<String>, grandResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permission, grandResults)
         // 거부한 경우 앱을 종료한다
         for (i in 0 .. grandResults.size-1) {
             if (grandResults[i] == -1) {
@@ -173,6 +174,7 @@ class MainView : AppCompatActivity() , ActivityCompat.OnRequestPermissionsResult
                 fragment = s1006()//s1006_j()
                 title = subviewlst.get(4).second;
             }
+            /*
             subviewlst.get(5).first->{
 
                 fragment = s1009();
@@ -180,24 +182,27 @@ class MainView : AppCompatActivity() , ActivityCompat.OnRequestPermissionsResult
 
 //                fragment = s1007_j()
 //                title = subviewlst.get(6).second;
-            }
+            }*/
+            /*
             subviewlst.get(6).first->{
                 fragment =  s1008() //SocketTest()
                 title = subviewlst.get(6).second;
-            }
-            subviewlst.get(7).first->{
+            }*/ // -- 관심종목
+
+            subviewlst.get(5).first->{ // 잔고조회
                 fragment =  s1011() //SocketTest()
-                title = subviewlst.get(7).second;
+                title = subviewlst.get(5).second;
             }
-            subviewlst.get(8).first->{
+            /*
+            subviewlst.get(8).first->{  // 체결내역
                 fragment =  s1012() //SocketTest()
                 title = subviewlst.get(8).second;
             }
-            subviewlst.get(9).first->{
+            subviewlst.get(9).first->{  // 종목검색
                 fragment =  s1010() //SocketTest()
                 manager.removeServiceAll(m_nHandle);
                 title = subviewlst.get(9).second;
-            }
+            }*/
             R.id.navi_webview->{
 
                 val intent = Intent(this, WebViewActivity::class.java)
